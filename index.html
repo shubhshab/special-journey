@@ -17,16 +17,20 @@
 <div id="questionScreen" class="screen">
     <h1>Are You Miss Shabnam? 🌸</h1>
     <button onclick="authorize()">Yes 💖</button>
-    <button onclick="notHer()">No 😅</button>
+    <button id="noBtn" onclick="notHer()">No 😅</button>
     <p id="funnyMessage"></p>
 </div>
 
 <!-- MAIN WEBSITE -->
 <div id="mainWebsite" class="hidden">
 
+<div class="hearts-container"></div>
+
 <header>
     💕 Happy Valentine's Day Shabnam 💕
 </header>
+
+<h2 id="typingText"></h2>
 
 <div class="container">
 
@@ -35,8 +39,8 @@
     <button onclick="showSection('promise')">My Promise 💍</button>
 
     <div id="love" class="content hidden">
-        <h2>You are my happiness, my peace, my forever ❤️</h2>
-        <p>Every moment with you feels magical, Shabnam.</p>
+        <h2>You are my sunshine in every storm ☀️</h2>
+        <p>With you, my world feels complete. You are my forever person.</p>
     </div>
 
     <div id="fav" class="content hidden">
@@ -51,7 +55,7 @@
 
     <div id="promise" class="content hidden">
         <h2>My Promise 💞</h2>
-        <p>I promise to always love you, support you and stand beside you forever.</p>
+        <p>I promise to choose you every day, in every lifetime, in every universe.</p>
     </div>
 
     <div class="message-box">
