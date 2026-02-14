@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Love Journey For Shabnam 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- START SCREEN -->
+<div id="startScreen" class="screen active">
+    <h1>💖 Starting Love Journey For My Valentine 💖</h1>
+    <button onclick="goToQuestion()">Start Journey 💕</button>
+</div>
+
+<!-- QUESTION SCREEN -->
+<div id="questionScreen" class="screen">
+    <h1>Are You Miss Shabnam? 🌸</h1>
+    <button onclick="authorize()">Yes 💖</button>
+    <button onclick="notHer()">No 😅</button>
+    <p id="funnyMessage"></p>
+</div>
+
+<!-- MAIN WEBSITE -->
+<div id="mainWebsite" class="hidden">
+
+<header>
+    💕 Happy Valentine's Day Shabnam 💕
+</header>
+
+<div class="container">
+
+    <button onclick="showSection('love')">Why I Love You 💖</button>
+    <button onclick="showSection('fav')">Your Favorite Things 🌸</button>
+    <button onclick="showSection('promise')">My Promise 💍</button>
+
+    <div id="love" class="content hidden">
+        <h2>You are my happiness, my peace, my forever ❤️</h2>
+        <p>Every moment with you feels magical, Shabnam.</p>
+    </div>
+
+    <div id="fav" class="content hidden">
+        <h2>Your Favorite Things 🌷</h2>
+        <ul>
+            <li>🌸 Flowers</li>
+            <li>🍫 Chocolate</li>
+            <li>🎶 Romantic Songs</li>
+            <li>🌙 Late Night Talks</li>
+        </ul>
+    </div>
+
+    <div id="promise" class="content hidden">
+        <h2>My Promise 💞</h2>
+        <p>I promise to always love you, support you and stand beside you forever.</p>
+    </div>
+
+    <div class="message-box">
+        <h2>Send Me a Secret Message 💌</h2>
+        <form action="https://formsubmit.co/YOUR-EMAIL@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <textarea name="message" placeholder="Write something for me..." required></textarea><br>
+            <button type="submit">Send Message 💕</button>
+        </form>
+    </div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
